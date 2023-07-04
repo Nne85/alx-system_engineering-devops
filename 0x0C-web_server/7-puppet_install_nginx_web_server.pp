@@ -34,7 +34,7 @@ file { '/etc/nginx/sites-available/default':
         }
     }
   ",
-  notify => Service['nginx'],
+  notify  => Service['nginx'],
 }
 
 # Ensure the default sites-enabled symlink points to the default configuration
