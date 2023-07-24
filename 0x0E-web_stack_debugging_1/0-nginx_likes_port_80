@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #Bash script that configures a server to on port 80
-rm /etc/nginx/sites-enabled/default
+sudo rm /etc/nginx/sites-enabled/default
 ln -s etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service ngnix restart
+sudo service ngnix restart
